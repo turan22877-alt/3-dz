@@ -1,18 +1,18 @@
-#include <stdio.h>
+п»ї#include <stdio.h>
 #include <locale.h>
 int main() {
     setlocale(LC_CTYPE, "RUS");
 
     float rebro, obem, bokovaya_ploshad;
 
-    printf("Введите длину ребра куба: ");
-    scanf_s("%f", &rebro);//простите пожалуйста я устал писать _CRT_SECURE_NO_DEPRECATE 
+    printf("Р’РІРµРґРёС‚Рµ РґР»РёРЅСѓ СЂРµР±СЂР° РєСѓР±Р°: ");
+    scanf_s("%f", &rebro);//РїСЂРѕСЃС‚РёС‚Рµ РїРѕР¶Р°Р»СѓР№СЃС‚Р° СЏ СѓСЃС‚Р°Р» РїРёСЃР°С‚СЊ _CRT_SECURE_NO_DEPRECATE 
 
     obem = rebro * rebro * rebro;
     bokovaya_ploshad = 4 * rebro * rebro;
 
-    printf("Объём куба: %.2f\n", obem);
-    printf("Площадь боковой поверхности: %.2f\n", bokovaya_ploshad);
+    printf("РћР±СЉС‘Рј РєСѓР±Р°: %.2f\n", obem);
+    printf("РџР»РѕС‰Р°РґСЊ Р±РѕРєРѕРІРѕР№ РїРѕРІРµСЂС…РЅРѕСЃС‚Рё: %.2f\n", bokovaya_ploshad);
 
     return 0;
 }
